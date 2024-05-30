@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Nooby</title>
+        <link rel="stylesheet" href="styles2.css">
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1 href="#" class="logo">Nooby</h1>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="page2.html">Valorant</a></li>
+                    <li class="active"><a href="page3.html">Foot</a></li>
+                    <!-- Test2 et Test3 pas encore fonctionnel--> 
+                </ul>
+            </div>
+            <img src="img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+        
+
+
+        
+        
+<!--Iframe pour afficher les statistiques depuis un autre site --> 
+        </nav>
+        <header>
+            <div class="midpage">
+                <h1 class="xad">Valorant Tracker</h1>
+                <iframe id="Xadu" style="border: 0" src="https://tracker.gg/valorant/profile/riot/Xadu%23KLPX/overview" width="600" height="700" frameborder="0"></iframe>
+                <iframe id="Scouipou" style="border: 0" src="https://tracker.gg/valorant/profile/riot/Scouipou%23EUW/overview" width="600" height="700" frameborder="0"></iframe>
+                <iframe id="GTRS" style="border: 0" src="https://tracker.gg/valorant/profile/riot/GTRSVROUMMM%23EUW/overview" width="600" height="700" frameborder="0"></iframe>
+                <iframe id="Layka" style="border: 0" src="https://tracker.gg/valorant/profile/riot/Laika92%23EUW/overview" width="600" height="700" frameborder="0"></iframe>
+                <iframe id="Chouko" style="border: 0" src="https://tracker.gg/valorant/profile/riot/Chouko%231509/overview" width="600" height="700" frameborder="0"></iframe>
+                <iframe id="Gadrix" style="border: 0" src="https://tracker.gg/valorant/profile/riot/DodgIfPlayWthMe%239805/overview" width="600" height="700" frameborder="0"></iframe>
+                <iframe id="ArcadeX" style="border: 0" src="https://tracker.gg/valorant/profile/riot/elsupercornichon%23EUW/overview" width="600" height="700" frameborder="0"></iframe>
+            </div>
+        </header>
+
+        
+        <section id="conseil" class="conseil" style="background-color: #e0f2f1;">
+            <h2>Conseil</h2><br>
+            <div class="video-container">
+                <p>Regardez notre vidéo de conseil sur YouTube :</p>
+                <a href="https://www.youtube.com/watch?v=kDs9Fg24dBE" target="_blank">Cliquez ici pour voir la vidéo</a>
+            </div><br>
+            <h3>Aim</h3><br>    
+            <ul class="val-conseils">
+                <li>Pratiquez régulièrement pour améliorer votre précision.</li>
+                <li>Utilisez des exercices de visée pour entraîner vos réflexes.</li>
+                <li>Ajustez la sensibilité de votre souris pour trouver ce qui vous convient le mieux.</li>
+                <li>Concentrez-vous sur la visée de la tête pour maximiser les dégâts.</li>
+                <li>Restez calme et contrôlé lors des combats pour améliorer votre précision.</li>
+            </ul><br>
+            <h3>Déplacement Tips</h3>
+            <ul class="movement-tips"><br>
+                <li>Utilisez les touches de déplacement pour vous repositionner rapidement.</li>
+                <li>Apprenez à straffer pour rendre vos mouvements moins prévisibles.</li>
+                <li>Pratiquez les sauts et les accroupissements pour éviter les tirs ennemis.</li>
+                <li>Utilisez les cartes pour vous familiariser avec les points de couverture.</li>
+                <li>Déplacez-vous constamment pour rester une cible difficile à atteindre.</li>
+            </ul>
+        </section>
+        
+
+
+
+    </body>
+
+
+<!-- adapter pour petite fenêtre sur PC mais il faut que je change les parametres afin de rendre des elements invisible une fois que ce menu est actif--> 
+
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Rappel : Ajouter le lien discord a la toute fin de la conception --> 
+
+<footer>
+    
+    <div class="footer1">
+        <h2 id="copyright">Copyright © 2024 - Kalpix</h2>
+    </div>
+    
+    <div class="footer2">
+        <h2>Navigation</h2>
+        <p id="afooter"><a href="index.html">Home</a></p>
+        <p id="afooter"><a href="page2.html">Valorant</a></p>
+        <p id="afooter"><a href="page3.html">Test1</a></p>
+        <p id="afooter"><a href="page4.html">Test2</a></p>
+        <p id="afooter"><a href="page5.html">Test3</a></p>
+
+    </div>
+    <div class="footer3">
+
+        <h2 id="afooter"><a src="">Discord</a></h2>
+    </div>
+  
+    
+    
+</footer>
+
+
+
+
+</html>

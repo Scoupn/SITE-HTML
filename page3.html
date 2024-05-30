@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Nooby</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Nooby</h1>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="page2.html">Valorant</a></li>
+                <li class="active"><a href="page3.html">Foot</a></li>
+            </ul>
+        </div>
+        <img src="img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+
+    <header>
+        <div class="midpage">
+            <h1 class="xad">FOOT</h1>
+            <iframe id="PL" style="border: 0" src="https://www.footmercato.net/angleterre/premier-league/classement" width="600" height="700" frameborder="0"></iframe>
+            <iframe id="L1" style="border: 0" src="https://www.footmercato.net/france/ligue-1/classement" width="600" height="700" frameborder="0"></iframe>
+            <iframe id="SERIEA" style="border: 0" src="https://www.footmercato.net/italie/serie-a/classement" width="600" height="700" frameborder="0"></iframe>
+            <iframe id="Bundes" style="border: 0" src="https://www.footmercato.net/allemagne/bundesliga/classement" width="600" height="700" frameborder="0"></iframe>
+            <iframe id="LIGA" style="border: 0" src="https://www.footmercato.net/espagne/liga/classement" width="600" height="700" frameborder="0"></iframe>
+            <iframe id="CAN" style="border: 0" src="https://www.footmercato.net/afrique/coupe-dafrique-des-nations/classement" width="600" height="700" frameborder="0"></iframe>
+        </div>
+    </header>
+
+<!-- Section Conseil avec sous-titres Technique et Stratégie -->
+<section id="conseil" class="conseil">
+    <h2>Conseil</h2>
+    <div class="video-container">
+        <p>Regardez notre vidéo de conseil sur YouTube :</p>
+        <a href="https://www.youtube.com/watch?v=moT2BnK8z70" target="_blank">Cliquez ici pour voir la vidéo</a>
+    </div>
+    <h3>Technique</h3>
+    <ul class="Football-conseils">
+        <li>Pratiquez régulièrement vos dribbles, vos passes et vos tirs pour améliorer votre technique individuelle.</li>
+        <li>Travaillez sur la précision de vos passes en visant des cibles spécifiques lors des exercices d'entraînement.</li>
+        <li>Maîtrisez les différentes techniques de contrôle de balle, y compris la réception de la balle en mouvement.</li>
+        <li>Entraînez-vous à changer de direction rapidement pour échapper aux défenseurs.</li>
+        <li>Améliorez votre jeu de tête en travaillant sur la précision et la puissance de vos sauts.</li>
+    </ul>
+    <h3>Stratégie</h3>
+    <ul class="movement-tips">
+        <li>Apprenez à lire le jeu et à anticiper les mouvements de vos coéquipiers et adversaires.</li>
+        <li>Adoptez une position tactique appropriée en fonction de votre rôle sur le terrain et des actions en cours.</li>
+        <li>Communiquez efficacement avec vos coéquipiers en utilisant des signes, des appels et des mots-clés.</li>
+        <li>Utilisez les espaces disponibles sur le terrain pour créer des opportunités de jeu et ouvrir des lignes de passe.</li>
+        <li>Adaptez votre stratégie en fonction du score, du temps restant et des forces et faiblesses de votre équipe et de l'adversaire.</li>
+    </ul>
+</section>
+    
+
+    <footer>
+        <div class="footer1">
+            <h2 id="copyright">Copyright © 2024 - Kalpix</h2>
+        </div>
+        <div class="footer2">
+            <h2>Navigation</h2>
+            <p id="afooter"><a href="index.html">Home</a></p>
+            <p id="afooter"><a href="page2.html">Valorant</a></p>
+            <p id="afooter"><a href="page3.html">Foot</a></p>
+            <p id="afooter"><a href="#conseil">Conseil</a></p> <!-- Lien pour aller à la section Conseil -->
+        </div>
+        <div class="footer3">
+            <h2 id="afooter"><a src="">Discord</a></h2>
+        </div>
+    </footer>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+        menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
